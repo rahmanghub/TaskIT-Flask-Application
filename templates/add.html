@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="jumbotron">
+        <h1>What are your Tasks</h1>
+        <p>Add the tasks</p>
+        <form method="POST">
+            {{form.hidden_tag()}}
+            {{form.task.label}}{{form.task()}}
+            {{form.submit()}}
+
+        </form>
+    </div>
+
+{% endblock %}
