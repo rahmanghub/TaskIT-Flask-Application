@@ -8,7 +8,7 @@ from flask_migrate import Migrate
 ########## Initiate app #############
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'secretkey'
+app.config['SECRET_KEY'] = '17728dfe071f3f090511568872d27d5c'
 
 ########## Database #############
 
@@ -70,4 +70,4 @@ def deleteTask():
     return render_template('delete.html',form=form)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host= '0.0.0.0)
